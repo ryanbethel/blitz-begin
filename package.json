@@ -26,14 +26,15 @@
   "dependencies": {
     "@prisma/client": "2.26.0",
     "blitz": "0.38.2",
-    "react-dom": "alpha",
-    "react": "alpha",
-    "zod": "3.2.0",
+    "express": "4.17.1",
     "final-form": "4.20.2",
-    "react-final-form": "6.5.3"
+    "react": "alpha",
+    "react-dom": "alpha",
+    "react-final-form": "6.5.3",
+    "serverless-http": "2.7.0",
+    "zod": "3.2.0"
   },
   "devDependencies": {
-    "@architect/sandbox": "3.7.4",
     "@types/preview-email": "2.0.0",
     "@types/react": "17.0.13",
     "eslint": "7.29.0",
