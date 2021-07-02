@@ -1,12 +1,7 @@
 @app
-begin-app
-
-@static
+blitz-begin
 
 @http
-
-@tables
-data
-  scopeID *String
-  dataID **String
-  ttl TTL
+/*
+  method get
+  src begin
