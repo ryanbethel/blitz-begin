@@ -7,7 +7,7 @@ import {
   ErrorFallbackProps,
   useQueryErrorResetBoundary,
 } from "blitz"
-import LoginForm from "app/auth/components/LoginForm"
+// import LoginForm from "app/auth/components/LoginForm"
 import { Suspense } from "react"
 
 export default function App({ Component, pageProps }: AppProps) {
@@ -27,7 +27,7 @@ export default function App({ Component, pageProps }: AppProps) {
 
 function RootErrorFallback({ error, resetErrorBoundary }: ErrorFallbackProps) {
   if (error instanceof AuthenticationError) {
-    return <LoginForm onSuccess={resetErrorBoundary} />
+    return <div>login form</div> //<LoginForm onSuccess={resetErrorBoundary} />
   } else if (error instanceof AuthorizationError) {
     return (
       <ErrorComponent

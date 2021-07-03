@@ -2,7 +2,7 @@ import { Suspense } from "react"
 import { Link, BlitzPage, useMutation, Routes } from "blitz"
 import Layout from "app/core/layouts/Layout"
 import { useCurrentUser } from "app/core/hooks/useCurrentUser"
-import logout from "app/auth/mutations/logout"
+// import logout from "app/auth/mutations/logout"
 
 /*
  * This file is just for a pleasant getting started page for your new app.
@@ -11,16 +11,16 @@ import logout from "app/auth/mutations/logout"
 
 const UserInfo = () => {
   const currentUser = useCurrentUser()
-  const [logoutMutation] = useMutation(logout)
+  // const [logoutMutation] = useMutation(logout)
 
   if (currentUser) {
     return (
       <>
         <button
           className="button small"
-          onClick={async () => {
-            await logoutMutation()
-          }}
+          // onClick={async () => {
+          //   await logoutMutation()
+          // }}
         >
           Logout
         </button>
@@ -34,12 +34,12 @@ const UserInfo = () => {
   } else {
     return (
       <>
-        <Link href={Routes.SignupPage()}>
+        <Link href="/">
           <a className="button small">
             <strong>Sign Up</strong>
           </a>
         </Link>
-        <Link href={Routes.LoginPage()}>
+        <Link href="/">
           <a className="button small">
             <strong>Login</strong>
           </a>
