@@ -1,4 +1,5 @@
-import { BlitzConfig, sessionMiddleware, simpleRolesIsAuthorized } from "blitz"
+// import { BlitzConfig, sessionMiddleware, simpleRolesIsAuthorized } from "blitz"
+import { BlitzConfig } from "blitz"
 
 const config: BlitzConfig = {
   middleware: [
