@@ -1,7 +1,7 @@
 import { Suspense } from "react"
 import { Link, BlitzPage, useMutation, Routes } from "blitz"
 import Layout from "app/core/layouts/Layout"
-import { useCurrentUser } from "app/core/hooks/useCurrentUser"
+// import { useCurrentUser } from "app/core/hooks/useCurrentUser"
 // import logout from "app/auth/mutations/logout"
 
 /*
@@ -10,10 +10,10 @@ import { useCurrentUser } from "app/core/hooks/useCurrentUser"
  */
 
 const UserInfo = () => {
-  const currentUser = useCurrentUser()
-  // const [logoutMutation] = useMutation(logout)
+  //   const currentUser = useCurrentUser()
+  //   // const [logoutMutation] = useMutation(logout)
 
-  if (currentUser) {
+  if (false) {
     return (
       <>
         <button
@@ -25,9 +25,9 @@ const UserInfo = () => {
           Logout
         </button>
         <div>
-          User id: <code>{currentUser.id}</code>
+          User id: <code></code>
           <br />
-          User role: <code>{currentUser.role}</code>
+          User role: <code></code>
         </div>
       </>
     )
